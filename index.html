@@ -38,13 +38,11 @@
                     <h2>a better way to Camp</h2>
                 </div>
                 <!--reserve form button-->
-                <a class="text-nowrap" href="#reserveForm">
-                    <div class="col-md-4 col-2-xl mt-4">
-                        <button class="btn btn-large btn-info">
-                            Reserve Campsite
-                        </button>
-                    </div>
-                </a>
+                <div class="col-md-4 col-2-xl mt-4">
+                    <a role="button" class="text-nowrap btn btn-large btn-info" href="#reserveForm">
+                        Reserve Campsite
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -103,12 +101,12 @@
             <!--media object-->
             <div class="col">
                 <div class="media">
+                    <img class="d-flex ml-3 img-thumbnail order-last" src="img/react-lake-thumb.jpg" alt="react lake">
                     <div class="media-body align-self-center">
                         <h3> React Lake Campground</h3>
                         <p class="d-none d-sm-block"> Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine
                             React Lake is a favorite for fly fishers. </p>
                     </div>
-                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="react lake">
                 </div>
             </div>
         </div>
@@ -118,6 +116,7 @@
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right"> Our Community Partners</h2>
             </div>
+            <!--media object-->
             <div class="col">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
@@ -137,12 +136,12 @@
                     <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
                         <form id="reserveForm">
-                            <!--number-->
+                            <!--number of campers-->
                             <div class="form-group row">
                                 <label class="col-form-label col-sm-6" for="numCampers">Number of Campers</label>
                                 <div class="col">
                                     <select class="form-control" name="numCampers" id="numCampers">
-                                        <option value="">Select...</option>
+                                        <option selected>Select...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -154,7 +153,7 @@
                             </div>
                             <!--date-->
                             <div class="form-group row">
-                                <label class="col-form-label col-sm-6" for="date" class="col-sm-6">Date</label>
+                                <label class="col-form-label col-sm-6" for="date">Date</label>
                                 <div class="col-sm-6"><input class="form-control" type="date" id="date" name="date" placeholder="Date"></div>
                             </div>
                             <!--button-->
@@ -201,10 +200,10 @@
             </div>
         </div>
     </footer>
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
